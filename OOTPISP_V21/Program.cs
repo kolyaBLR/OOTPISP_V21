@@ -59,6 +59,16 @@ namespace OOTPISP_V21
             list.Update(customer);
             list.Print();
 
+            List<int> sortList = new List<int>
+            {
+                2, 2, 4, 21, 4, 54, -21, 0, -10
+            };
+            Vector vector = new Vector(sortList);
+            Console.WriteLine("Свап 2-ух максимальных элементов массива");
+            vector.Print("До");
+            vector.Sort();
+            vector.Print("После");
+
             Console.ReadKey();
         }
     }
